@@ -309,6 +309,16 @@ body {
 	}
 }
 
+// about us
+
+.aboutus {
+	&__team {
+		display: grid;
+		grid-template-columns: repeat(12, 1fr);
+		grid-template-rows: repeat(10, 1fr);
+	}
+}
+
 // footer
 
 .footer {
