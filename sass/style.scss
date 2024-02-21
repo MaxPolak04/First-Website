@@ -184,7 +184,7 @@ body {
 
 		&-img {
 			grid-row: 1/2;
-			min-width: 250px;
+			// min-width: 250px;
 			background-position: center;
 			background-size: cover;
 
@@ -317,14 +317,14 @@ body {
 		grid-template-columns: repeat(12, 1fr);
 		grid-template-rows: repeat(5, 1fr);
 		gap: 2em;
+		margin: 0 1.5em;
 	}
 
 	&__member {
 		grid-column: 1/-1;
 		display: grid;
 		grid-template-columns: 1fr;
-		grid-template-rows: minmax(200px, 1fr);
-		margin: 0 1.5em;
+		grid-template-rows: minmax(250px, 1fr);
 		border-radius: 8px;
 		box-shadow: 0 0 10px $shadow;
 		background-color: $white;
@@ -332,28 +332,28 @@ body {
 
 		&-img {
 			grid-row: 1/2;
-			min-width: 250px;
+			// min-width: 250px;
 			background-position: center;
 			background-size: cover;
 
 			&--one {
-				background-image: url("");
+				background-image: $blue-gradient-transparent, url("../img/aboutus-01.jpg");
 			}
 
 			&--two {
-				background-image: url("");
+				background-image: $purple-gradient-transparent, url("../img/aboutus-02.jpg");
 			}
 
 			&--three {
-				background-image: url("");
+				background-image: $green-gradient-transparent, url("../img/aboutus-03.jpeg");
 			}
 
 			&--four {
-				background-image: url("");
+				background-image: $blue-gradient-transparent, url("../img/aboutus-04.jpg");
 			}
 
 			&--five {
-				background-image: url("");
+				background-image: $green-gradient-transparent, url("../img/aboutus-05.png");
 			}
 		}
 
@@ -493,6 +493,39 @@ body {
 			&--three {
 				grid-column: 7/10;
 				grid-row: 1/2;
+			}
+		}
+	}
+
+	.aboutus {
+		&__team {
+			// grid-template-columns: repeat(1, 1fr);
+			grid-template-rows: repeat(4, 1fr);
+		}
+
+		&__member {
+			grid-row: 1/3;
+
+			&--one {
+				grid-column: 1/5;
+			}
+
+			&--two {
+				grid-column: 5/9;
+			}
+
+			&--three {
+				grid-column: 9/-1;
+			}
+
+			&--four {
+				grid-column: 3/7;
+				grid-row: 3/5;
+			}
+			
+			&--five {
+				grid-column: 7/11;
+				grid-row: 3/5;
 			}
 		}
 	}
