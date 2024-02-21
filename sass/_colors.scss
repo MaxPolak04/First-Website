@@ -1,0 +1,30 @@
+$dark: #333;
+$white: #fff;
+$light-white: #e1e1e1;
+$gold: #ffd447;
+$gold-light: #f8db7b;
+$shadow: #00000080;
+$main-color: #0000f8;
+$main-color-light: #3e3ef8;
+$main-color-lighter: #4a4af6;
+$main-gradient-transparent: linear-gradient(
+	130deg,
+	rgba(0, 0, 248, 0.5170400924041492) 35%,
+	rgba(0, 221, 255, 0.5114378515077906) 100%
+);
+$purple-gradient-transparent: linear-gradient(
+	148deg,
+	rgba(0, 0, 248, 0.3) 35%,
+	rgba(139, 0, 255, 0.5) 100%
+);
+$green-gradient-transparent: linear-gradient(
+	215deg,
+	rgba(0, 0, 248, 0.3) 35%,
+	rgba(0, 255, 105, 0.3) 100%
+);
+$blue-gradient-transparent: linear-gradient(
+	203deg,
+	rgba(0, 0, 248, 0.3) 35%,
+	rgba(0, 174, 255, 0.3) 90%
+);
+

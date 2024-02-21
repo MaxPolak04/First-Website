@@ -1,0 +1,44 @@
+@use './colors' as *;
+
+.wrapper {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.section {
+    color: $dark;
+    padding: 2em 0;
+
+    &-white {
+        background-color: $white;
+    }
+
+    &-light-white {
+        background: $light-white;
+    }
+
+    &-heading {
+        margin-bottom: 1em;
+        text-transform: uppercase;
+        text-align: center;
+        font-family: 'Cinzel', serif;
+        font-weight: 400;
+        color: $gold;
+    }
+}
+
+// =======================================
+// media
+// =======================================
+
+@media (min-width: 768px) {
+    .section {
+        padding: 4em 0;
+
+        &-heading {
+            margin-bottom: 2em;
+            font-size: 3.6rem;
+        }
+    }
+}
