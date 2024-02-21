@@ -315,7 +315,79 @@ body {
 	&__team {
 		display: grid;
 		grid-template-columns: repeat(12, 1fr);
-		grid-template-rows: repeat(10, 1fr);
+		grid-template-rows: repeat(5, 1fr);
+		gap: 2em;
+	}
+
+	&__member {
+		grid-column: 1/-1;
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(200px, 1fr);
+		margin: 0 1.5em;
+		border-radius: 8px;
+		box-shadow: 0 0 10px $shadow;
+		background-color: $white;
+		overflow: hidden;
+
+		&-img {
+			grid-row: 1/2;
+			min-width: 250px;
+			background-position: center;
+			background-size: cover;
+
+			&--one {
+				background-image: url("");
+			}
+
+			&--two {
+				background-image: url("");
+			}
+
+			&--three {
+				background-image: url("");
+			}
+
+			&--four {
+				background-image: url("");
+			}
+
+			&--five {
+				background-image: url("");
+			}
+		}
+
+		&-content {
+			grid-row: 2/3;
+			padding: 1em;
+			background-color: $white;
+		}
+
+		&-heading {
+			text-align: center;
+			margin-bottom: 0.5em;
+			color: $main-color-light;
+		}
+
+		&--one {
+			grid-row: 1/2;
+		}
+
+		&--two {
+			grid-row: 2/3;
+		}
+
+		&--three {
+			grid-row: 3/4;
+		}
+
+		&--four {
+			grid-row: 4/5;
+		}
+
+		&--five {
+			grid-row: 5/6;
+		}
 	}
 }
 

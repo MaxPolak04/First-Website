@@ -288,7 +288,65 @@ body {
 .aboutus__team {
   display: grid;
   grid-template-columns: repeat(12, 1fr);
-  grid-template-rows: repeat(10, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+  gap: 2em;
+}
+.aboutus__member {
+  grid-column: 1/-1;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: minmax(200px, 1fr);
+  margin: 0 1.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+  background-color: #fff;
+  overflow: hidden;
+}
+.aboutus__member-img {
+  grid-row: 1/2;
+  min-width: 250px;
+  background-position: center;
+  background-size: cover;
+}
+.aboutus__member-img--one {
+  background-image: url("");
+}
+.aboutus__member-img--two {
+  background-image: url("");
+}
+.aboutus__member-img--three {
+  background-image: url("");
+}
+.aboutus__member-img--four {
+  background-image: url("");
+}
+.aboutus__member-img--five {
+  background-image: url("");
+}
+.aboutus__member-content {
+  grid-row: 2/3;
+  padding: 1em;
+  background-color: #fff;
+}
+.aboutus__member-heading {
+  text-align: center;
+  margin-bottom: 0.5em;
+  color: #3e3ef8;
+}
+.aboutus__member--one {
+  grid-row: 1/2;
+}
+.aboutus__member--two {
+  grid-row: 2/3;
+}
+.aboutus__member--three {
+  grid-row: 3/4;
+}
+.aboutus__member--four {
+  grid-row: 4/5;
+}
+.aboutus__member--five {
+  grid-row: 5/6;
 }
 
 .footer {
