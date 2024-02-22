@@ -229,7 +229,7 @@ body {
 }
 .services__guitar-icon {
   width: 150px;
-  animation: guitar 10s linear infinite;
+  animation: guitar 15s linear infinite;
 }
 .services__square-icon {
   width: 100px;
