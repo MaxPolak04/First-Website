@@ -499,6 +499,62 @@ body {
 
 	.aboutus {
 		&__team {
+			grid-template-rows: repeat(3, 1fr);
+		}
+
+		&__member {
+
+			&--one {
+				grid-column: 1/7;
+				grid-row: 1/2;
+			}
+
+			&--two {
+				grid-column: 7/-1;
+				grid-row: 1/2;
+			}
+
+			&--three {
+				grid-column: 1/7;
+				grid-row: 2/3;
+			}
+
+			&--four {
+				grid-column: 7/-1;
+				grid-row: 2/3;
+			}
+			
+			&--five {
+				grid-column: 4/10;
+				grid-row: 3/4;
+			}
+		}
+	}
+
+	.footer {
+		padding: 2em 0;
+	}
+}
+
+@media (min-width: 1200px) {
+	.header {
+		.nav {
+			&-desktop {
+				&__link {
+					font-size: 2.4rem;
+				}
+			}
+		}
+
+		.hero-img {
+			&__header {
+				font-size: 5.8rem;
+			}
+		}
+	}
+
+	.aboutus {
+		&__team {
 			// grid-template-columns: repeat(1, 1fr);
 			grid-template-rows: repeat(4, 1fr);
 		}
@@ -526,28 +582,6 @@ body {
 			&--five {
 				grid-column: 7/11;
 				grid-row: 3/5;
-			}
-		}
-	}
-
-	.footer {
-		padding: 2em 0;
-	}
-}
-
-@media (min-width: 1200px) {
-	.header {
-		.nav {
-			&-desktop {
-				&__link {
-					font-size: 2.4rem;
-				}
-			}
-		}
-
-		.hero-img {
-			&__header {
-				font-size: 5.8rem;
 			}
 		}
 	}
