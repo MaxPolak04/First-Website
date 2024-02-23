@@ -411,10 +411,41 @@ body {
 }
 
 .portfolio {
+	// display: grid;
+	// grid-template-columns: 1fr;
+	// grid-template-rows: repeat(3, 1fr);
+
+	.carousel {
+		margin: 0 1.5em;
+	}
+
 	.carousel-caption {
 		left: 0;
 		right: 0;
 		background-color: #0000009c;
+	}
+
+	.card-group {
+		margin: 0 1.5em;
+	}
+
+	.card {
+		margin: .5em;
+		border-radius: 8px;
+		box-shadow: 0 0 10px $shadow;
+		background-color: $white;
+		overflow: hidden;
+
+		&-body {
+			padding: 1em;
+			background-color: $white;
+		}
+		
+		&-title {
+			text-align: center;
+			font-size: 1.8rem;
+			color: $main-color-light;
+		}
 	}
 }
 

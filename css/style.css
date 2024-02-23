@@ -19,6 +19,7 @@
   margin-bottom: 1em;
   text-transform: uppercase;
   text-align: center;
+  font-size: 2.4rem;
   font-family: "Cinzel", serif;
   font-weight: 400;
   color: #ffd447;
@@ -347,10 +348,32 @@ body {
   grid-row: 5/6;
 }
 
+.portfolio .carousel {
+  margin: 0 1.5em;
+}
 .portfolio .carousel-caption {
   left: 0;
   right: 0;
   background-color: rgba(0, 0, 0, 0.6117647059);
+}
+.portfolio .card-group {
+  margin: 0 1.5em;
+}
+.portfolio .card {
+  margin: 0.5em;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5019607843);
+  background-color: #fff;
+  overflow: hidden;
+}
+.portfolio .card-body {
+  padding: 1em;
+  background-color: #fff;
+}
+.portfolio .card-title {
+  text-align: center;
+  font-size: 1.8rem;
+  color: #3e3ef8;
 }
 
 .footer {
