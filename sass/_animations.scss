@@ -1,0 +1,48 @@
+@keyframes python {
+	from {
+		bottom: 40px;
+		left: -50px;
+	}
+
+	to {
+		bottom: 1200px;
+		left: 350px;
+		transform: rotate(550deg);
+	}
+}
+
+@keyframes guitar {
+	from {
+		top: 0;
+		left: -110px;
+	}
+
+	to {
+		top: 1000px;
+		left: 300px;
+		transform: rotate(560deg);
+	}
+}
+
+@keyframes square {
+	from {
+		left: -110%;
+		bottom: 50%;
+	}
+
+	to {
+		left: 2500px;
+		bottom: 35%;
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes maximize {
+	from {
+		transform: rotate(35deg);
+	}
+
+	to {
+		transform: rotate(360deg);
+	}
+}

@@ -1,5 +1,6 @@
 @use "./colors" as *;
 @use "./components" as *;
+@use "./animations" as *;
 
 *,
 *::before,
@@ -160,7 +161,7 @@ body {
 
 	&__boxes {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 		gap: 2em;
 		margin: 0 1.5em;
@@ -270,61 +271,12 @@ body {
 	}
 }
 
-@keyframes python {
-	from {
-		bottom: 40px;
-		left: -50px;
-	}
-
-	to {
-		bottom: 1200px;
-		left: 350px;
-		transform: rotate(550deg);
-	}
-}
-
-@keyframes guitar {
-	from {
-		top: 0;
-		left: -110px;
-	}
-
-	to {
-		top: 1000px;
-		left: 300px;
-		transform: rotate(560deg);
-	}
-}
-
-@keyframes square {
-	from {
-		left: -110%;
-		bottom: 50%;
-	}
-
-	to {
-		left: 2500px;
-		bottom: 35%;
-		transform: rotate(360deg);
-	}
-}
-
-@keyframes maximize {
-	from {
-		transform: rotate(35deg);
-	}
-
-	to {
-		transform: rotate(360deg);
-	}
-}
-
 // about us
 
 .aboutus {
 	&__team {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(5, 1fr);
 		gap: 2em;
 		margin: 0 1.5em;
@@ -447,7 +399,7 @@ body {
 
 	&__boxes {
 		display: grid;
-		grid-template-columns: repeat(12, 1fr);
+		grid-template-columns: repeat(1, 1fr);
 		grid-template-rows: repeat(3, 1fr);
 		gap: 2em;
 		margin: 0 1.5em;
@@ -514,6 +466,7 @@ body {
 @media (min-width: 576px) {
 	.services {
 		&__boxes {
+			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: repeat(2, 1fr);
 		}
 
@@ -614,6 +567,7 @@ body {
 
 	.aboutus {
 		&__team {
+			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: repeat(3, 1fr);
 		}
 
@@ -648,6 +602,7 @@ body {
 
 	.contact {
 		&__boxes {
+			grid-template-columns: repeat(12, 1fr);
 			grid-template-rows: repeat(2, 1fr);
 		}
 

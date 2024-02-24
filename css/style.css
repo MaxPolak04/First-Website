@@ -33,6 +33,47 @@
     font-size: 3.6rem;
   }
 }
+@keyframes python {
+  from {
+    bottom: 40px;
+    left: -50px;
+  }
+  to {
+    bottom: 1200px;
+    left: 350px;
+    transform: rotate(550deg);
+  }
+}
+@keyframes guitar {
+  from {
+    top: 0;
+    left: -110px;
+  }
+  to {
+    top: 1000px;
+    left: 300px;
+    transform: rotate(560deg);
+  }
+}
+@keyframes square {
+  from {
+    left: -110%;
+    bottom: 50%;
+  }
+  to {
+    left: 2500px;
+    bottom: 35%;
+    transform: rotate(360deg);
+  }
+}
+@keyframes maximize {
+  from {
+    transform: rotate(35deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
 *,
 *::before,
 *::after {
@@ -164,7 +205,7 @@ body {
 }
 .services__boxes {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2em;
   margin: 0 1.5em;
@@ -252,50 +293,9 @@ body {
   animation: maximize 120s linear infinite;
 }
 
-@keyframes python {
-  from {
-    bottom: 40px;
-    left: -50px;
-  }
-  to {
-    bottom: 1200px;
-    left: 350px;
-    transform: rotate(550deg);
-  }
-}
-@keyframes guitar {
-  from {
-    top: 0;
-    left: -110px;
-  }
-  to {
-    top: 1000px;
-    left: 300px;
-    transform: rotate(560deg);
-  }
-}
-@keyframes square {
-  from {
-    left: -110%;
-    bottom: 50%;
-  }
-  to {
-    left: 2500px;
-    bottom: 35%;
-    transform: rotate(360deg);
-  }
-}
-@keyframes maximize {
-  from {
-    transform: rotate(35deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 .aboutus__team {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(5, 1fr);
   gap: 2em;
   margin: 0 1.5em;
@@ -391,7 +391,7 @@ body {
 }
 .contact__boxes {
   display: grid;
-  grid-template-columns: repeat(12, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-template-rows: repeat(3, 1fr);
   gap: 2em;
   margin: 0 1.5em;
@@ -439,6 +439,7 @@ body {
 
 @media (min-width: 576px) {
   .services__boxes {
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
   .services__box--one {
@@ -514,6 +515,7 @@ body {
     font-size: 2.4rem;
   }
   .aboutus__team {
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(3, 1fr);
   }
   .aboutus__member--one {
@@ -537,6 +539,7 @@ body {
     grid-row: 3/4;
   }
   .contact__boxes {
+    grid-template-columns: repeat(12, 1fr);
     grid-template-rows: repeat(2, 1fr);
   }
   .contact__box--one {
