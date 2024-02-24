@@ -171,11 +171,13 @@ body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: repeat(3, 1fr);
+  padding: 0;
   align-items: center;
   height: 100vh;
   background-image: linear-gradient(130deg, rgba(0, 0, 248, 0.5170400924) 35%, rgba(0, 221, 255, 0.5114378515) 100%), url("../img/hero-img-small.jpg");
   background-size: cover;
   background-position: center;
+  color: #fff;
 }
 .header .hero-img__content {
   grid-column: 2/3;
@@ -273,7 +275,7 @@ body {
   z-index: -100;
 }
 .services__python-icon {
-  width: 60px;
+  width: 100px;
   transform: rotate(32deg);
   animation: python 10s linear infinite;
 }
@@ -454,6 +456,30 @@ body {
     grid-column: 4/10;
     grid-row: 2/3;
   }
+  .aboutus__team {
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+  }
+  .aboutus__member--one {
+    grid-column: 1/7;
+    grid-row: 1/2;
+  }
+  .aboutus__member--two {
+    grid-column: 7/-1;
+    grid-row: 1/2;
+  }
+  .aboutus__member--three {
+    grid-column: 1/7;
+    grid-row: 2/3;
+  }
+  .aboutus__member--four {
+    grid-column: 7/-1;
+    grid-row: 2/3;
+  }
+  .aboutus__member--five {
+    grid-column: 4/10;
+    grid-row: 3/4;
+  }
 }
 @media (min-width: 768px) {
   html {
@@ -513,30 +539,6 @@ body {
   }
   .header .hero-img__text {
     font-size: 2.4rem;
-  }
-  .aboutus__team {
-    grid-template-columns: repeat(12, 1fr);
-    grid-template-rows: repeat(3, 1fr);
-  }
-  .aboutus__member--one {
-    grid-column: 1/7;
-    grid-row: 1/2;
-  }
-  .aboutus__member--two {
-    grid-column: 7/-1;
-    grid-row: 1/2;
-  }
-  .aboutus__member--three {
-    grid-column: 1/7;
-    grid-row: 2/3;
-  }
-  .aboutus__member--four {
-    grid-column: 7/-1;
-    grid-row: 2/3;
-  }
-  .aboutus__member--five {
-    grid-column: 4/10;
-    grid-row: 3/4;
   }
   .contact__boxes {
     grid-template-columns: repeat(12, 1fr);
